@@ -49,7 +49,7 @@ public class EconomyCommand extends SimpleCommand {
                                         Economy economy = harimeltEconomy.getEconomy();
                                         EconomyResponse economyResponse = economy.depositPlayer(targetPlayer, amount);
                                         if (economyResponse.transactionSuccess()) {
-                                            messages.sendMessage(player, "Economy.GivePlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                            messages.sendMessage(player, "Economy.GivePlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                             messages.sendMessage(targetPlayer, "Economy.GivePlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                         } else {
                                             messages.sendMessage(player, "Economy.TakePlayerError", new String[][] {{"%error%", economyResponse.errorMessage}});
@@ -86,7 +86,7 @@ public class EconomyCommand extends SimpleCommand {
                                         Economy economy = harimeltEconomy.getEconomy();
                                         EconomyResponse economyResponse = economy.withdrawPlayer(targetPlayer, amount);
                                         if (economyResponse.transactionSuccess()) {
-                                            messages.sendMessage(player, "Economy.TakePlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                            messages.sendMessage(player, "Economy.TakePlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                             messages.sendMessage(targetPlayer, "Economy.TakePlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                         } else {
                                             messages.sendMessage(player, "Economy.TakePlayerError", new String[][] {{"%error%", economyResponse.errorMessage}});
@@ -123,7 +123,7 @@ public class EconomyCommand extends SimpleCommand {
                                         Economy economy = harimeltEconomy.getEconomy();
                                         economy.withdrawPlayer(targetPlayer, economy.getBalance(targetPlayer));
                                         economy.depositPlayer(targetPlayer, amount);
-                                        messages.sendMessage(player, "Economy.SetPlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                        messages.sendMessage(player, "Economy.SetPlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                         messages.sendMessage(targetPlayer, "Economy.SetPlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                     } catch (NumberFormatException e) {
                                         messages.sendMessage(player, "Economy.amountInvalid", new String[][] {{"%amount%", amountString}});
@@ -177,7 +177,7 @@ public class EconomyCommand extends SimpleCommand {
                                     Economy economy = harimeltEconomy.getEconomy();
                                     EconomyResponse economyResponse = economy.depositPlayer(targetPlayer, amount);
                                     if (economyResponse.transactionSuccess()) {
-                                        messages.sendMessage(console, "Economy.GivePlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                        messages.sendMessage(console, "Economy.GivePlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                         messages.sendMessage(targetPlayer, "Economy.GivePlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                     } else {
                                         messages.sendMessage(console, "Economy.TakePlayerError", new String[][] {{"%error%", economyResponse.errorMessage}});
@@ -214,7 +214,7 @@ public class EconomyCommand extends SimpleCommand {
                                     Economy economy = harimeltEconomy.getEconomy();
                                     EconomyResponse economyResponse = economy.withdrawPlayer(targetPlayer, amount);
                                     if (economyResponse.transactionSuccess()) {
-                                        messages.sendMessage(console, "Economy.TakePlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                        messages.sendMessage(console, "Economy.TakePlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                         messages.sendMessage(targetPlayer, "Economy.TakePlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                     } else {
                                         messages.sendMessage(console, "Economy.TakePlayerError", new String[][] {{"%error%", economyResponse.errorMessage}});
@@ -251,7 +251,7 @@ public class EconomyCommand extends SimpleCommand {
                                     Economy economy = harimeltEconomy.getEconomy();
                                     economy.withdrawPlayer(targetPlayer, economy.getBalance(targetPlayer));
                                     economy.depositPlayer(targetPlayer, amount);
-                                    messages.sendMessage(console, "Economy.SetPlayerComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
+                                    messages.sendMessage(console, "Economy.SetPlayerComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
                                     messages.sendMessage(targetPlayer, "Economy.SetPlayerCompleteNotify", new String[][] {{"%amount%", amountString}});
                                 } catch (NumberFormatException e) {
                                     messages.sendMessage(console, "Economy.amountInvalid", new String[][] {{"%amount%", amountString}});

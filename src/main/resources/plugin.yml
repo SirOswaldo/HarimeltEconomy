@@ -26,19 +26,13 @@ commands:
     aliases:
       - pagar
 permissions:
-  HarimeltEconomy.Economy:
-    default: op
-  HarimeltEconomy.Economy.Give:
-    default: op
-  HarimeltEconomy.Economy.Take:
-    default: op
-  HarimeltEconomy.Economy.Set:
-    default: op
-  HarimeltEconomy.Balance:
+  harimelt.admin.economy:
+    description: "Manage this plugin"
+  harimelt.economy:
+    description: "Manage Economy"
+  harimelt.balance:
     description: "See your balance"
-  HarimeltEconomy.Balance.Others:
+  harimelt.other.balance:
     description: "See others players balance"
-  HarimeltEconomy.Pay:
+  harimelt.pay:
     description: "Pay others players"
-  HarimeltEconomy.Bank:
-    description: "Can manage your bank account"

@@ -58,8 +58,8 @@ public class PayCommand extends SimpleCommand {
                             if (economy.has(player, amount)) {
                                 economy.withdrawPlayer(player, amount);
                                 economy.depositPlayer(targetPlayer, amount);
-                                messages.sendMessage(player, "Pay.payComplete", new String[][] {{"%player%", targetName}, {"%amount%", amountString}});
-                                messages.sendMessage(targetPlayer, "Pay.payCompleteNotify", new String[][] {{"%player%", player.getName()}, {"%amount%", amountString}});
+                                messages.sendMessage(player, "Pay.payComplete", new String[][] {{"%playerName%", targetName}, {"%amount%", amountString}});
+                                messages.sendMessage(targetPlayer, "Pay.payCompleteNotify", new String[][] {{"%playerName%", player.getName()}, {"%amount%", amountString}});
                             } else {
                                 messages.sendMessage(player, "Pay.noHaveMoney");
                             }
@@ -67,7 +67,7 @@ public class PayCommand extends SimpleCommand {
                             messages.sendMessage(player, "Pay.amountInvalid", new String[][] {{"%amount%", amountString}});
                         }
                     } else {
-                        messages.sendMessage(player, "Pay.playerNameInvalid", new String[][] {{"%player%", targetName}});
+                        messages.sendMessage(player, "Pay.playerNameInvalid", new String[][] {{"%playerName%", targetName}});
                     }
                 } else {
                     messages.sendMessage(player, "Pay.amountEmpty");

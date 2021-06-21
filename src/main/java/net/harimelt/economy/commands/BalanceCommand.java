@@ -32,7 +32,7 @@ public class BalanceCommand extends SimpleCommand {
                         if (player.hasPermission("harimelt.other.balance")) {
                             Economy economy = harimeltEconomy.getEconomy();
                             messages.sendMessage(player, "Balance.otherBalance", new String[][] {
-                                    {"%player%", targetName}, {"%balance%", economy.getBalance(targetPlayer) + ""}
+                                    {"%playerName%", targetName}, {"%balance%", economy.getBalance(targetPlayer) + ""}
                             });
                         } else {
                             messages.sendMessage(player, "Balance.noPermissionOther");
@@ -69,11 +69,11 @@ public class BalanceCommand extends SimpleCommand {
             if (targetPlayer != null) {
                 Economy economy = harimeltEconomy.getEconomy();
                 messages.sendMessage(console, "Balance.otherBalance", new String[][] {
-                        {"%player%", targetName}, {"%balance%", economy.getBalance(targetPlayer) + ""}
+                        {"%playerName%", targetName}, {"%balance%", economy.getBalance(targetPlayer) + ""}
                 });
             } else {
                 messages.sendMessage(console, "Balance.playerNameInvalid", new String[][] {
-                        {"%player%"}
+                        {"%playerName%", targetName}
                 });
             }
         } else {
