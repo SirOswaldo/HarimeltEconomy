@@ -1,0 +1,56 @@
+prefix: '&aHarimelt&2Economy &8»'
+Admin:
+  noPermission: '%prefix% &fNo tienes permisos suficientes.'
+  optionEmpty: '%prefix% &fEl comando no puede estar vacío.'
+  optionInvalid: '%prefix% &fLa opción &2%option% &fno es valida.'
+  reloadComplete: '%prefix% &fEl complemento se recargo completamente.'
+  help:
+    - '%prefix% &fComandos de Ayuda'
+    - ' /%command% reload'
+    - ' /%command% version'
+    - '----------------------------------'
+Balance:
+  noPermission: '%prefix% &fNo tienes permisos suficientes.'
+  noPermissionOther: '%prefix% &fNo tienes permisos suficientes.'
+  noAccountOther: '%prefix% &fEl jugador &2%player% &fno tiene cuenta o no esta cargada.'
+  playerNameEmpty: '%prefix% &fEl nombre del jugador esta vacío.'
+  playerNameInvalid: '%prefix% &fEl jugador &2%player% &fno es válido o esta desconectado.'
+  otherBalance: '%prefix% &fEl jugador &2%player% &2tiene un total de: &2%balance%'
+  ownBalance: '%prefix% &fTienes un total de: &2%balance%'
+Pay:
+  isConsole: '%prefix% &fNo puedes pagar desde la consola.'
+  noPermission: '%prefix% &fNo tienes permisos suficientes.'
+  playerNameEmpty: '%prefix% &fEl nombre de jugador no puede estar vacío.'
+  playerNameInvalid: '%prefix% &fEl jugador &2%player% &fno es válido o esta desconectado.'
+  amountEmpty: '%prefix% &fLa cantidad no puede estar vacía.'
+  amountInvalid: '%prefix% &fLa cantidad &2%amount% &fno es válida.'
+  noHaveMoney: '%prefix% &fNo tienes suficiente dinero.'
+  payComplete: '%prefix% &fPagaste una cantidad de &2%amount% &fal jugador &2%player%&f.'
+  payCompleteNotify: '%prefix% &fRecibiste un pago con una cantidad de &2%amount%&f
+    del jugador &2%player%&f.'
+Economy:
+  noPermission: '%prefix% &fNo tienes permisos suficientes.'
+  optionEmpty: '%prefix% &fEl comando no puede estar vacío.'
+  optionInvalid: '%prefix% &fLa opción &2%option% &fno es valida.'
+  playerNameEmpty: '%prefix% &fEl nombre del jugador no puede estar vacío.'
+  playerNameInvalid: '%prefix% &fEl nombre &2%playerName% &fno es válido o esta desconectado.'
+  amountEmpty: '%prefix% &fLa cantidad no puede estar vacía.'
+  amountInvalid: '%prefix% &fLa cantidad &2%amount% &fno es válida.'
+  GivePlayerComplete: '%prefix% &fLe agregaste &2%amount% &fde dinero al jugador &2%player%&f.'
+  GivePlayerCompleteNotify: '%prefix% &fTu dinero fue actualizado por un administrador
+    ahora tienes &2%amount%&f mas de dinero.'
+  GivePlayerError: '%prefix% &fNo se pudo completar la transacción: %error%'
+  TakePlayerComplete: '%prefix% &fLe quitaste &2%amount% &fde dinero al jugador &2%player%&f.'
+  TakePlayerCompleteNotify: '%prefix% &fTu dinero fue actualizado por un administrador
+    ahora tienes &2%amount%&f menos de dinero.'
+  TakePlayerError: '%prefix% &fNo se pudo completar la transacción: %error%'
+  SetPlayerComplete: '%prefix% &fLe estableciste &2%amount% &fde dinero al jugador
+    &2%player%&f.'
+  SetPlayerCompleteNotify: '%prefix% &fTu dinero fue actualizado por un administrador
+    ahora tienes &2%amount%&f de dinero.'
+  help:
+    - '%prefix% &fComandos de Ayuda'
+    - ' /%command% give [jugador] [cantidad]'
+    - ' /%command% take [jugador] [cantidad]'
+    - ' /%command% set [jugador] [cantidad]'
+    - '----------------------------------'

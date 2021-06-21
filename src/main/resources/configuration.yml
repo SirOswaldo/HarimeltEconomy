@@ -1,0 +1,9 @@
+startBalance: 500
+mySqlSync: true
+mysql:
+  ip: ""
+  port: ""
+  username: ""
+  password: ""
+  database: ""
+  table: ""

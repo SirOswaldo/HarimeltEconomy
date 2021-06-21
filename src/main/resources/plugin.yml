@@ -1,0 +1,44 @@
+main: net.harimelt.economy.HarimeltEconomy
+name: HarimeltEconomy
+version: 1.0
+author: SirOswaldo
+depend: [Vault]
+softdepend:
+  - PlaceholderAPI
+commands:
+  HarimeltEconomy:
+    description: "Manage this plugin"
+    aliases:
+      - heconomy
+  Economy:
+    description: "Manage users balance"
+    aliases:
+      - eco
+      - economia
+  Balance:
+    description: "See your balance and others players balance"
+    aliases:
+      - money
+      - bal
+      - dinero
+  Pay:
+    description: "Pay others players"
+    aliases:
+      - pagar
+permissions:
+  HarimeltEconomy.Economy:
+    default: op
+  HarimeltEconomy.Economy.Give:
+    default: op
+  HarimeltEconomy.Economy.Take:
+    default: op
+  HarimeltEconomy.Economy.Set:
+    default: op
+  HarimeltEconomy.Balance:
+    description: "See your balance"
+  HarimeltEconomy.Balance.Others:
+    description: "See others players balance"
+  HarimeltEconomy.Pay:
+    description: "Pay others players"
+  HarimeltEconomy.Bank:
+    description: "Can manage your bank account"
